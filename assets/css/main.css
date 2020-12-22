@@ -183,10 +183,10 @@ body, body * {
 
   .barra__lateral--tags ul li {
     display: inline-block;
-    background-color: steelblue;
     color: white;
     padding: 0.2rem;
     margin-bottom: 0.5rem;
+    background-color: steelblue;
   }
 
   .barra__lateral--imagen {
