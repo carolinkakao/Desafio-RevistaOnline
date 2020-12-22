@@ -1,0 +1,221 @@
+// Small devices (landscape phones, 576px and up)
+  @media (max-width: 767.98px) {
+
+    body {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+    }
+    // Estilos barra de navegación
+    .barraNav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: gray 2px solid;
+      &__titulo {
+        text-transform: uppercase;
+        margin-right: 20px;
+        font-size: 20px;
+      }
+      &__nav {
+      
+        ul li {
+        
+          text-transform: uppercase;
+          font-size: 12px;
+          list-style:none;
+          
+        }
+       
+      }
+      &__buscar {
+        border-radius: 20px;
+        border-style: solid;
+        width: 120px;
+      }
+    
+    }
+
+    .barraNav__link{
+      text-decoration: none;
+      
+    }
+
+    .barraNav__primerLink{
+      display:none;
+    }
+    // Estilos main-contenido
+    .contenido{
+      margin: 4rem .8rem .5rem .7rem;
+    }
+    .noticias{
+    &__imagen{
+
+      width: 100%;
+      height: 180px;
+      margin-top: 1rem;
+      
+  }
+   &__footer{
+    margin-top: 1rem;
+    text-align: justify;
+   
+  }
+   &__subtitulo{
+    margin-bottom: 1rem;
+  }
+}
+  // Estilos aside barra_lateral 
+.barra__lateral{
+  display:none;
+}
+
+  // Estilos sección boletin
+  .boletin{
+    background-color: $platinum;
+    padding:20px;
+    margin-right:55px; 
+    width: 100%;  
+}
+
+//Estilos footer
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__rights{
+      padding: 10px 0;
+  }
+}
+
+ 
+  }
+
+
+
+  // Large devices (desktops,min 768px and up)
+  @media (min-width: 768px) {
+    body {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+    }
+   
+
+    // Estilos barra de navegación
+    .barraNav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    &__nav{
+      text-transform: uppercase;
+      
+    }
+      
+      &__link{
+        text-decoration: none;
+        
+      }
+      &__titulo{
+        text-transform: uppercase;
+        padding: 2rem;
+      }
+        
+      &__buscar{
+        border-radius: 30px;
+            display: block;}
+      
+    
+    }
+.barraNav__nav ul {
+  list-style:none;
+  position:relative;
+  left:400px;
+  
+}
+.barraNav__nav ul li {
+  display:inline-block;
+  
+}
+
+
+  //Etiqueta main - contenido 
+  .contenido{
+    display: grid;
+    grid-template-columns: 3fr 1.1fr;
+    grid-gap: 1px;
+    margin: 5rem 4rem 3rem 4rem;
+       
+}
+.noticias{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-column-gap: 1rem;
+  
+
+  &__imagen{
+    width: 100%;
+    height: 70vh;
+  }
+  &__subtitulo{
+    margin-bottom: 1rem;
+  }
+  &__footer{
+    margin-top: 1rem;
+    text-align: justify;
+  }
+  
+}
+
+
+ // Estilos aside barra_lateral 
+ .barra__lateral{
+   margin-left: 1.5rem;
+   &--parrafo{
+     margin:1rem 0;
+   }
+   &--tags{
+     text-decoration:none;
+   
+     
+      }
+   
+ }
+ .barra__lateral--tags ul{
+  list-style:none;
+ }
+ .barra__lateral--tags ul li{
+  display:inline-block;
+  background-color: steelblue;
+  color: white;
+  padding: .2rem;
+  margin-bottom: .5rem;
+ }
+ .barra__lateral--imagen{
+   width: 100%;
+   height: 40vh;
+ }
+
+ // Estilos sección boletin
+.boletin{
+  background-color:$platinum;
+  text-align: center;
+  padding: 40px;
+   
+&__titulo{
+  padding:15px;
+}
+}
+
+
+   // Estilos footer 
+    .footer{
+      text-align: center;
+        margin: 1rem 0;
+    }
+}
+
+ 
